@@ -1,0 +1,498 @@
+html {
+  scroll-behavior: smooth;
+}
+section {
+  scroll-margin-top: 90px; /*Cuộn đến phần đầu */
+}
+
+.main-title-2 {
+  font-size: 24px;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+.sec {
+  padding: 100px 0;
+}
+/* *Banner */
+.banner-sec {
+  background-size: cover;
+  background-position: center center;
+  color: #fff;
+  padding: 100px 0;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+}
+/* *END Banner*/
+
+/* *Breadcrumb */
+.breadcrumb-sec {
+  padding: 12px 0;
+  background-color: #e7f3fd;
+}
+.breadcrumb-nav {
+  font-weight: bold;
+  color: #8b9298;
+}
+.breadcrumb-nav li {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 11px;
+}
+.breadcrumb-nav li:last-child {
+  color: #454545;
+}
+.breadcrumb-nav li::before {
+  content: "";
+  margin-right: 15px;
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  background-color: #8b9298;
+}
+.breadcrumb-nav li.current-page::before {
+  background-color: #007aff;
+}
+/* *END Breadcrumb */
+
+/* *INTRO */
+.intro-sec {
+  padding-bottom: 40px;
+}
+.intro-sec-2.pt-0 {
+  padding-top: 0;
+}
+.intro-sec-2 .main-title-2 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.intro-sec-2 .main-title-2::after {
+  content: "";
+  border-top: 1px solid #d4d4d4;
+  margin-left: 30px;
+  flex-grow: 1;
+}
+.intro-sec-2 .container .mona-content ul li {
+  list-style-type: none;
+  padding-left: 20px;
+  position: relative;
+  margin: 1em 0;
+}
+.intro-sec-2 .mona-content .left {
+  width: 25%;
+}
+.mona-content a {
+  color: #bf2922;
+  pointer-events: none;
+}
+.intro-sec-2 .mona-content .mona-nav-3 {
+  color: #666666;
+  margin: 0;
+}
+.intro-sec-2 .mona-content .right {
+  width: 75%;
+}
+.sec.pt-0 {
+  padding-top: 0;
+}
+.products-sec-left {
+  width: 25%;
+}
+.pd-aside {
+  background-color: #105baa;
+  border-radius: 12px;
+  border: 3px solid #105baa;
+  text-align: center;
+  position: sticky;
+  top: 100px;
+  box-shadow: 6px 6px 16px rgba(0, 0, 0, 0.16);
+}
+.pd-aside-title {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 15px;
+  color: #fff;
+}
+.pd-aside-nav {
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.pd-aside-nav li {
+  border-bottom: 1px solid #e2e2e2;
+}
+.pd-aside-nav li a {
+  display: block;
+  padding: 20px 10px;
+  transition: 0.2s;
+}
+.pd-aside-nav li .title {
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 3px;
+}
+.pd-cate {
+  padding: 30px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+.pd-aside-nav li a.active {
+  background-image: linear-gradient(to right, #1886eb, #4fcafc);
+  box-shadow: 6px 6px 16px rgba(0, 0, 0, 0.16);
+  color: #fff;
+}
+.pd-active {
+  background-image: linear-gradient(to right, #1886eb, #4fcafc);
+  box-shadow: 6px 6px 16px rgba(0, 0, 0, 0.16);
+  color: #fff;
+}
+/* *INTRO RIGHT */
+.products-sec-right {
+  width: 75%;
+}
+.pd-cate .text-wrap {
+  margin-bottom: 25px;
+}
+.products-sec-right .pd-wrap {
+  margin-bottom: 50px;
+}
+.pd-cate .pd-wrap {
+  margin-bottom: 0;
+}
+.pd-wrap .columns {
+  flex-wrap: wrap;
+}
+.pd-wrap .column {
+  width: calc(100% / 3);
+}
+.pd-item {
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: 0.2s;
+}
+.pd-item .pd-img a {
+  display: block;
+  padding: 15px;
+}
+.pd-item .pd-img img {
+  width: 100%;
+  height: auto;
+}
+.pd-item .pd-title a {
+  min-height: 58px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px 15px;
+  color: #fff;
+}
+.pd-item .pd-info {
+  padding: 15px;
+  flex-grow: 1;
+  background-color: #f8f8f8;
+}
+.pd-item:hover {
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.16);
+}
+.pd-cate .main-btn-wrap {
+  margin-top: 25px;
+  text-align: right;
+}
+.intro-sec-2 .mona-content ul li strong {
+  font-size: 14px;
+}
+.pd-intro-left {
+  width: 65%;
+}
+.pd-intro-right {
+  width: 35%;
+  position: relative;
+}
+
+/* !Chỉ Tự Tiêu */
+.pd-intro {
+  margin-bottom: 15px;
+}
+.pd-intro .columns {
+  align-items: center;
+}
+.mona-content h4 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+/* *CARESORB PLUS® POLYGLACTIN 910 */
+.instructions-sec-1 {
+  background-color: #f8f8f8;
+}
+.sec.p-0 {
+  padding: 0;
+}
+.products-article .hl-color-3 {
+  color: #800f80;
+}
+.main-title.mb-0 {
+  margin-bottom: 0;
+}
+.main-title-wrap {
+  padding: 60px 0 20px;
+}
+.main-title-wrap .main-title,
+.main-title-wrap .main-title-2 {
+  margin-bottom: 0;
+}
+.instructions-sec-1 .main-title-wrap {
+  background-color: #fff;
+  color: #105baa;
+  padding-top: 30px !important;
+}
+.instructions-content {
+  padding: 40px 0;
+}
+.instructions-content .columns {
+  flex-wrap: wrap;
+}
+.info-wrap .column {
+  width: calc(100% / 6);
+}
+.info-item .info-icon {
+  margin-bottom: 10px;
+}
+.info-item .info-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.instructions-sec-2 .main-title-wrap {
+  background-color: #800f80;
+  color: #fff;
+}
+.instructions-content .mona-content {
+  column-count: 2;
+  column-gap: 30px;
+}
+.d-inline-block {
+  display: inline-block;
+}
+.mona-content .color_setup {
+  color: #105baa;
+}
+.guide-sec {
+  background-color: #d8f5ff;
+  text-align: center;
+  overflow: hidden;
+  color: #827a7a;
+  padding: 65px 0;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.16);
+}
+.guide-sec .guide-info {
+  width: 650px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.guide-sec .guide-info .main-title {
+  color: #2f2f2f;
+  position: relative;
+  min-width: 10%;
+}
+.guide-sec .guide-info .main-title.red::before {
+  border-top: 1px solid #f70c0c;
+  border-top-width: 2px;
+}
+.guide-sec .guide-info .main-title.red::after {
+  border-top: 1px solid #f70c0c;
+  border-top-width: 2px;
+}
+.guide-sec .guide-info .main-title.white::before {
+  border-top: 1px solid #fff;
+  border-top-width: 2px;
+}
+.guide-sec .guide-info .main-title.white::after {
+  border-top: 1px solid #fff;
+  border-top-width: 2px;
+}
+.guide-sec .guide-info .main-title::before {
+  content: "";
+  height: 1px;
+  display: block;
+  position: absolute;
+  left: -100%;
+  width: 100%;
+  top: 25px;
+  border-top-width: 2px;
+  border-top: 1px solid #d32aa6;
+}
+.guide-sec .guide-info .main-title::after {
+  content: "";
+  height: 1px;
+  display: block;
+  position: absolute;
+  right: -100%;
+  width: 100%;
+  top: 25px;
+  border-top-width: 2px;
+  border-top: 1px solid #d32aa6;
+}
+section.guide-sec1.sec {
+  background-color: #105baa;
+  width: 100%;
+  height: auto;
+  padding: 0;
+  background-size: cover !important;
+}
+.guide-sec .guide-info .mona-content {
+  font-size: 18px;
+  font-weight: bold;
+}
+section.guide-sec1.sec {
+  background-color: #d8f5ff;
+  width: 100%;
+  height: auto;
+  padding: 0;
+  background-size: cover !important;
+}
+.products-speci-sec .container .main-title-2 {
+  color: #105baa;
+}
+.table-responsive {
+  max-width: 100%;
+  overflow: auto;
+}
+.speci-table table {
+  text-align: center;
+  font-size: 13px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+table {
+  width: 100%;
+  max-width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.products-article {
+  padding: 50px 0 0;
+}
+.speci-table table thead {
+  background-color: #7d287e;
+  color: #fff;
+  font-weight: bold;
+  border-bottom: 0;
+}
+.speci-table table thead th {
+  padding: 20px 30px;
+  border-right: 1px solid #d8badb;
+}
+.speci-table table tbody td {
+  padding: 15px 20px;
+  border-right: 1px solid #d8badb;
+}
+.speci-table table tbody tr:nth-child(odd) {
+  background-color: #f8f8f8;
+}
+.speci-table table tbody tr:hover {
+  background-color: #e2e2e2;
+}
+.ZoomIn {
+  animation: ZoomIn 0.7s;
+}
+
+section.guide-sec1.sec {
+  background-color: #105baa;
+  width: 100%;
+  height: auto;
+  padding: 0;
+  background-size: cover !important;
+}
+
+@keyframes ZoomIn {
+  0% {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+/* !RESPONSIVE */
+@media screen and (max-width: 1200px) {
+  .sec {
+    padding: 60px 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sec {
+    padding: 40px 0;
+  }
+  .banner-sec {
+    min-height: 250px;
+    padding: 80px 0;
+  }
+  .main-title-2 {
+    margin-bottom: 15px;
+  }
+  .intro-sec-2 .columns {
+    flex-wrap: wrap;
+  }
+  /* *Product */
+  .pd-wrap .columns {
+    margin: -7.5px;
+  }
+  .products-sec-left {
+    width: 100%;
+    order: 2;
+  }
+  .products-sec-right {
+    width: 100%;
+  }
+  .products-sec .columns {
+    flex-wrap: wrap;
+  }
+  .pd-aside-nav li a {
+    padding: 15px;
+  }
+  .pd-aside-title {
+    padding: 10px 15px;
+  }
+
+  /* !Chỉ Tự Tiêu */
+  .pd-intro-left {
+    width: 100%;
+  }
+  /* *CARESORB PLUS® POLYGLACTIN 910 */
+  .info-wrap .column {
+    width: 25%;
+    border-right: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+    border-top: 1px solid #cccccc;
+  }
+}
+@media screen and (max-width: 500px) {
+  .intro-sec-2 .mona-content .left {
+    width: 100%;
+    padding-bottom: 0;
+  }
+  .intro-sec-2 .mona-content .right {
+    width: 100%;
+  }
+  .pd-wrap .column {
+    width: 50%;
+  }
+  /* !CHỈ TỰ TIÊU */
+  /* *CARESORB PLUS® POLYGLACTIN 910 */
+  .info-wrap .column {
+    width: 50% !important;
+  }
+  .instructions-content .mona-content {
+    column-count: 1;
+  }
+  .instructions-content .mona-content .d-inline-block {
+    display: block;
+    margin-bottom: 30px;
+  }
+}
