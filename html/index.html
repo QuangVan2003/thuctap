@@ -6,149 +6,129 @@
     <link rel="stylesheet" href="../css/style.css">
     <title>Công ty TNHH Chỉ Phẫu Thuật | Sản Xuất Thiết Bị Y Tế</title>
     <link rel="shortcut icon" href="../img/cropped-logo-1-32x32.png" type="image/x-icon">
+    
 </head>
-<body>
-    <header class="header fixed" id="header">
-        <div class="top-header">
-            <div class="container">
-                <p class="open-hour">Giờ làm việc: Thứ Hai - Thứ Sáu: 8:00 - 16:30 - Thứ Bảy: 8:00 - 11:30 </p>
-                <ul class="social-nav">
-                    <li>
-                        <a href="#" target="_blank" class="square-30fa">
-                            <i class="fa-brands fa-facebook-f"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" target="_blank" class="square-30fa">
-                            <i class="fa-brands fa-google-plus-g"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" target="_blank" class="square-30fa">
-                            <i class="fa-brands fa-instagram"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" target="_blank" class="square-30fa">
-                            <i class="fa-brands fa-youtube"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" target="_blank" class="square-30fa">
-                            <i class="fa-brands fa-linkedin"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="bottom-header">
-            <div class="container">
-                <div class="logo">
-                   <a href="index.html" class="custom-logo" rel="home">
-                    <img width="400" src="../img/Logo-CPT.png" alt="Công ty TNHH Chỉ phẫu thuật CPT">
-                   </a>
+
+<body id="body">
+    <!-- Phần Chung -->
+        <header id="header" class="header">
+            <div class="top-header">
+                <div class="container">
+                    <p class="open-hour">Giờ làm việc: Thứ Hai - Thứ Sáu: 8:00 - 16:30 - Thứ Bảy: 8:00 - 11:30 </p>
+                    <ul class="social-nav">
+                        <li>
+                            <a href="#" target="_blank" class="square-30fa">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank" class="square-30fa">
+                                <i class="fa-brands fa-google-plus-g"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank" class="square-30fa">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank" class="square-30fa">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank" class="square-30fa">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="main-menu" id="main-menu">
-                    <div class="main-menu-logo">
-                        <ul class="main-menu-nav">
-                            <li class="menu-item">
-                                <a href="#">ENGLISH</a>
-                            </li>
-                            <li>
-                                <a href="index.html">TRANG CHỦ</a>
-                            </li>
-                            <li class="menu-item dropdown">
-                                <a href="#">
-                                    CHỈ PHẪU THUẬT  
-                                    <i class="fa-solid fa-angle-down"></i>
-                                </a>
-                                <div class="sub-menu-wrap">
-                                    <ul class="sub-menu">
-                                        <!-- * SUB-MENU  -->
-                                        <li class="menu-item-7 dropdown">
-                                            <a href="#">CHỈ PHẪU THUẬT TỰ TIÊU
-                                                <i class="fa-solid fa-angle-right"></i>
+            </div>
+            <div id="bottom-header" class="bottom-header">
+                <div class="container">
+                    <div class="logo hd-logo">
+                       <a href="index.html" class="custom-logo" rel="home">
+                        <img width="400" src="../img/Logo-CPT.png" alt="Công ty TNHH Chỉ phẫu thuật CPT">
+                       </a>
+                    </div>
+                    <div class="main-menu" id="main-menu">
+                       <div class="main-menu-inner">
+                        <div class="main-menu-logo">
+                            <a href="" class="custom-logo-link">
+                                <img width="400" height="145" src="../img/Logo-CPT.png" alt="" class="custom-logo">
+                            </a>
+                        </div>
+                            <ul class="main-menu-nav">
+                                <li class="menu-item">
+                                    <a href="#">ENGLISH</a>
+                                </li>
+                                <li>
+                                    <a class="link-home current-page" id="link-home" href="index.html">TRANG CHỦ</a>
+                                </li>
+                                <li class="menu-item dropdown">
+                                    <a class="link-home" href="./chi-phau-thuat.html">
+                                        CHỈ PHẪU THUẬT  
+                                        <i class="fa-solid fa-angle-down" onclick="toggleSubMenu(event)"></i>
+                                    </a>
+                                    <div class="sub-menu-wrap hidden">
+                                        <ul class="sub-menu">
+                                            <!-- * SUB-MENU  -->
+                                            <li class="menu-item-7 dropdown">
+                                                <a href="./chi_tu_tieu.html">CHỈ PHẪU THUẬT TỰ TIÊU
+                                                    <i class="fa-solid fa-angle-right" onclick="toggleSubMenu(event)"></i>
+                                                </a>
+                                                <div class="sub-menu-wrap hidden">
+                                                    <ul class="sub-menu">
+                                                        <li class="menu-item">
+                                                            <a href="../chi-phau-thuat-tu-tieu/caresorb-plus-polyglactin-910.html">
+                                                                POLYGLACTIN 910 ANTIBACTERIAL – Chỉ phẫu thuật kháng khuẩn
+                                                            </a>
+                                                        </li>
+                                                        <li><a href="../chi-phau-thuat-tu-tieu/polyglactin910.html">
+                                                                POLYGLACTIN 910
+                                                            </a></li>
+                                                        <li><a href="../chi-phau-thuat-tu-tieu/polyglactin910R.html">
+                                                                POLYGLACTIN 910 (R)
+                                                            </a></li>
+                                                        <li><a href="../chi-phau-thuat-tu-tieu/PolyglycolicAcid.html">
+                                                                POLYGLYCOLIC ACID
+                                                            </a></li>
+                                                        <li><a href="../chi-phau-thuat-tu-tieu/PolyglycolicAcidR.html">
+                                                            POLYGLYCOLIC ACID (R)
+                                                            </a></li>
+                                                        <li><a href="../chi-phau-thuat-tu-tieu/Polydioxanone.html">
+                                                                POLYDIOXANONE
+                                                            </a></li>
+                                                        <li><a href="../chi-phau-thuat-tu-tieu/Polyglecaprone25.html">
+                                                                POLYGLECAPRONE 25
+                                                            </a></li>
+                                                        <li><a href="../chi-phau-thuat-tu-tieu/PlainCatgut.html">
+                                                                PLAIN CATGUT
+                                                            </a></li>
+                                                        <li><a href="../chi-phau-thuat-tu-tieu/ChromicCatgut.html">
+                                                                CHROMIC CATGUT
+                                                            </a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li class="menu-item-8 dropdown">
+                                                <a href="./chi-khong-tieu.html">
+                                                CHỈ PHẪU THUẬT KHÔNG TIÊU
+                                                <i class="fa-solid fa-angle-right" onclick="toggleSubMenu(event)"></i>
                                             </a>
-                                            <div class="sub-menu-wrap">
+                                            <div class="sub-menu-wrap hidden">
                                                 <ul class="sub-menu">
                                                     <li class="menu-item">
                                                         <a href="">
-                                                            POLYGLACTIN 910 ANTIBACTERIAL – Chỉ phẫu thuật kháng khuẩn
-                                                        </a>
-                                                    </li>
-                                                    <li><a href="">
-                                                            POLYGLACTIN 910
-                                                        </a></li>
-                                                    <li><a href="">
-                                                            POLYGLACTIN 910 (R)
-                                                        </a></li>
-                                                    <li><a href="">
-                                                            POLYGLYCOLIC ACID
-                                                        </a></li>
-                                                    <li><a href="">
-                                                        POLYGLYCOLIC ACID (R)
-                                                        </a></li>
-                                                    <li><a href="">
-                                                            POLYDIOXANONE
-                                                        </a></li>
-                                                    <li><a href="">
-                                                            POLYGLECAPRONE 25
-                                                        </a></li>
-                                                    <li><a href="">
-                                                            PLAIN CATGUT
-                                                        </a></li>
-                                                    <li><a href="">
-                                                            CHROMIC CATGUT
-                                                        </a></li>
-                                                </ul>
-                                            </div>
-                                        </li>
-                                        <li class="menu-item-8 dropdown">
-                                            <a href="#">
-                                            CHỈ PHẪU THUẬT KHÔNG TIÊU
-                                            <i class="fa-solid fa-angle-right"></i>
-                                        </a>
-                                        <div class="sub-menu-wrap">
-                                            <ul class="sub-menu">
-                                                <li class="menu-item">
-                                                    <a href="">
-                                                        NYLON-POLYAMIDE
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="">
-                                                        SILK | SOIE
-                                                    </a>
-                                                </li>
-                                                <li><a href="">
-                                                        POLYESTER
-                                                    </a>
-                                                </li>
-                                                <li><a href="">
-                                                        POLYPROPYLENE
-                                                    </a>
-                                                </li>
-                                                <li><a href="">
-                                                        SURGICAL STEEL
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        </li>
-                                        <li class="dropdown">
-                                            <a href="#">
-                                                CHỈ PHẪU THUẬT TIM MẠCH
-                                                <i class="fa-solid fa-angle-right"></i>
-                                            </a>
-                                            <div class="sub-menu-wrap">
-                                                <ul class="sub-menu">
-                                                    <li>
-                                                        <a href="">
-                                                            TEMPORARY CARDIAC PACING WIRE
+                                                            NYLON-POLYAMIDE
                                                         </a>
                                                     </li>
                                                     <li>
                                                         <a href="">
+                                                            SILK | SOIE
+                                                        </a>
+                                                    </li>
+                                                    <li><a href="">
                                                             POLYESTER
                                                         </a>
                                                     </li>
@@ -160,117 +140,1032 @@
                                                             SURGICAL STEEL
                                                         </a>
                                                     </li>
-                                                    <li><a href="">
-                                                            PVDF
-                                                        </a>
-                                                    </li>
                                                 </ul>
                                             </div>
-                                        </li>
-                                        <li class="dropdown">
-                                            <a href="#">
-                                                CHỈ PHẪU THUẬT MẮT
-                                                <i class="fa-solid fa-angle-right"></i>
-                                            </a>
-                                            <div class="sub-menu-wrap">
-                                                <ul class="sub-menu">
-                                                    <li>
-                                                        <a href="">
-                                                            POLYGLACTIN 910
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="">
-                                                            NYLON-POLYAMIDE
-                                                        </a>
-                                                    </li>
-                                                    <li><a href="">
-                                                            POLYPROPYLENE
-                                                        </a>
-                                                    </li>
-                                                    <li><a href="">
-                                                            POLYESTER
-                                                        </a>
-                                                    </li>
-                                                    <li><a href="">
-                                                            SILK
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </li>
-                                    </ul>
+                                            </li>
+                                            <li class="dropdown">
+                                                <a class="link-home" href="#">
+                                                    CHỈ PHẪU THUẬT TIM MẠCH
+                                                    <i class="fa-solid fa-angle-right" onclick="toggleSubMenu(event)"></i>
+                                                </a>
+                                                <div class="sub-menu-wrap hidden">
+                                                    <ul class="sub-menu">
+                                                        <li>
+                                                            <a href="">
+                                                                TEMPORARY CARDIAC PACING WIRE
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="">
+                                                                POLYESTER
+                                                            </a>
+                                                        </li>
+                                                        <li><a href="">
+                                                                POLYPROPYLENE
+                                                            </a>
+                                                        </li>
+                                                        <li><a href="">
+                                                                SURGICAL STEEL
+                                                            </a>
+                                                        </li>
+                                                        <li><a href="">
+                                                                PVDF
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li class="dropdown">
+                                                <a href="#">
+                                                    CHỈ PHẪU THUẬT MẮT
+                                                    <i class="fa-solid fa-angle-right" onclick="toggleSubMenu(event)"></i>
+                                                </a>
+                                                <div class="sub-menu-wrap hidden">
+                                                    <ul class="sub-menu">
+                                                        <li>
+                                                            <a href="">
+                                                                POLYGLACTIN 910
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="">
+                                                                NYLON-POLYAMIDE
+                                                            </a>
+                                                        </li>
+                                                        <li><a href="">
+                                                                POLYPROPYLENE
+                                                            </a>
+                                                        </li>
+                                                        <li><a href="">
+                                                                POLYESTER
+                                                            </a>
+                                                        </li>
+                                                        <li><a href="">
+                                                                SILK
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="menu-item dropdown">
+                                    <a href="./vat-tu-y-te.html">
+                                        VẬT TƯ Y TẾ
+                                        <i class="fa-solid fa-angle-down" onclick="toggleSubMenu(event)"></i>
+                                    </a>
+                                    <div class="sub-menu-wrap hidden">
+                                        <ul class="sub-menu">
+                                            <li>
+                                                <a href="">
+                                                    LƯỠI DAO MỔ
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    VẬT LIỆU CẦM MÁU CARECEL
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    LƯỚI THOÁT VỊ TRUSTILENE MESH
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    KIM PHẪU THUẬT XTRACOAT
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a class="link-home" href="./test.html">
+                                        TIN TỨC
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="link-home" href="./test2.html">LIÊN HỆ</a>
+                                </li>
+                            </ul>
+                            <ul class="main-menu-social social-nav">
+                                <li>
+                                    <a href="#" target="_blank" class="square-30fa">
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank" class="square-30fa">
+                                        <i class="fa-brands fa-google-plus-g"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank" class="square-30fa">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank" class="square-30fa">
+                                        <i class="fa-brands fa-youtube"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank" class="square-30fa">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                       </div>
+                       <div class="main-menu-overlay" id="main-menu-overlay"></div>
+                    </div>
+                    <div class="hamburger-btn main-menu-btn">
+                        <div class="bar"></div>
+                    </div>
+                </div>
+            </div>
+        </header>
+       
+        <div id="scroll-top" class="scroll-top show">
+            <i class="fa-solid fa-angle-up"></i>
+        </div>
+        <!-- *Recapcha -->
+        <div class="rc-anchor">
+            <div class="rc-anchor-normal-footer">
+                <div class="rc-anchor-logo-img"></div>
+            </div> 
+            <div class="rc-anchor-invisible-text">
+                <span>được bảo vệ bằng <b>reCAPTCHA</b></span>
+                <div class="rc-anchor-pt">
+                <a href="https://www.google.com/intl/vi/policies/privacy/" target="_blank">Bảo mật</a>
+                <span>-</span>
+                <a href="https://www.google.com/intl/vi/policies/terms/" target="_blank">Điều khoản</a>
+                </div>
+            </div>   
+        </div>
+<!-- *MAIN -->
+    <main class="main" id="main">
+    <div class="home-banner-slider-wrap">
+        <div class="home-banner-slider is-slider">
+            <div class="swiper-container">
+               <div class="swiper-wrapper">
+                <div class="home-banner-sec show-anim" style="background-image: url('../img/CARESILK-CPT-SUTURES.jpg');">
+                    <div class="container">
+                     <p class="home-banner-title ">AN TOÀN & HIỆU QUẢ</p>
+                     <p class="home-banner-sub-title">Trong từng ca mổ</p>
+                     <a href="./chi-phau-thuat.html" class="main-btn bg-3">
+                         XEM THÊM
+                         <i class="fa-solid fa-angle-right"></i>
+                     </a>
+                    </div>
+                 </div>
+                 <div class="home-banner-sec show-anim" style="background-image: url('../img/home-banner-sec.jpg');">
+                    <div class="container">
+                     <p class="home-banner-title">AN TOÀN & HIỆU QUẢ</p>
+                     <p class="home-banner-sub-title">Trong từng ca mổ</p>
+                     <a href="#" class="main-btn bg-3">
+                         XEM THÊM
+                         <i class="fa-solid fa-angle-right"></i>
+                     </a>
+                    </div>
+                 </div>           
+               </div>
+               <ul id="dots" class="dots">
+                <li data-slide-index="0" class="dot active"></li>
+                <li class="dot" data-slide-index="1"></li>
+             </ul>
+            </div>
+
+        </div>
+        <!-- !Lý Do Chọn -->
+        <div class="why-choose-us-sec">
+            <div class="container">
+                <div class="reasons-wrap">
+                    <div class="columns">
+                        <div class="column " style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInRightShorter;">
+                            <div class="reasons-item">
+                                <div class="reasons-icon">
+                                    <img width="50" height="50" src="../img/i-1.png" alt="">
                                 </div>
-                            </li>
-                            <li class="menu-item dropdown">
-                                <a href="">
-                                    VẬT TƯ Y TẾ
-                                    <i class="fa-solid fa-angle-down"></i>
-                                </a>
-                                <div class="sub-menu-wrap">
-                                    <ul class="sub-menu">
-                                        <li>
-                                            <a href="">
-                                                LƯỠI DAO MỔ
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="">
-                                                VẬT LIỆU CẦM MÁU CARECEL
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="">
-                                                LƯỚI THOÁT VỊ TRUSTILENE MESH
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="">
-                                                KIM PHẪU THUẬT XTRACOAT
-                                            </a>
-                                        </li>
-                                    </ul>
+                                <p class="reasons-title">
+                                    ĐẦY ĐỦ
+                                    <br>
+                                   CHỦNG LOẠI
+                                </p>
+                            </div>
+                        </div>
+                        <div class="column fadeInRightShorter" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInRightShorter 1.3s;">
+                            <div class="reasons-item">
+                                <div class="reasons-icon">
+                                    <img width="50" height="50" src="../img/i-2.png" alt="">
                                 </div>
+                                <p class="reasons-title">
+                                    GIÁ CẢ PHÙ HỢP
+                                </p>
+                            </div>
+                        </div>
+                        <div class="column fadeInRightShorter" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInRightShorter;">
+                            <div class="reasons-item">
+                                <div class="reasons-icon">
+                                    <img width="50" height="50" src="../img/i-3.png" alt="">
+                                </div>
+                                <p class="reasons-title">
+                                    TIÊU CHUẨN
+                                    <br>
+                                   ISO | FDA
+                                </p>
+                            </div>
+                        </div>
+                        <div class="column fadeInRightShorter" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInRightShorter;">
+                            <div class="reasons-item">
+                                <div class="reasons-icon">
+                                    <img width="50" height="50" src="../img/i-4.png" alt="">
+                                </div>
+                                <p class="reasons-title">
+                                    GIAO HÀNG
+                                    <br>
+                                   NHANH CHÓNG
+                                </p>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="home-search-sec sec">
+        <div class="container">
+            <div class="columns">
+                <div class="column home-search-sec-left">
+                    <div class="home-search-info " >
+                        <h3 class="main-title">
+                        CHUYÊN GIA VỀ VẬT LIỆU KHÂU NỐI VẾT THƯƠNG
+                        </h3>
+                        <p class="main-sub-title hl-color">KIỆT TÁC CHO MỌI CÔNG TRÌNH GIẢI PHẪU</p>
+                    </div>
+                    
+                </div>
+                <div class="column home-search-sec-right">
+                    <div class="home-search-form ">
+                        <div class="ft-search">
+                        <p class="ft-search-title">TÌM SẢN PHẨM</p>
+                        <form class="ft-search-input" id="form-search-product-footer1" autocomplete="off">
+                        <input type="search" name="key-search1" id="key-search1" value="" class="f-control" placeholder="SEARCH YOUR PRODUCT">
+                        <button type="submit" class="main-btn mona-has-ajax ">
+                        <img alt="" data-src="https://cpt-medical.com/template/images/search-btn.svg" class=" ls-is-cached lazyloaded" src="https://cpt-medical.com/template/images/search-btn.svg">
+                        </button>
+                        <div class="result-wrap" id="result-wrap1">
+                        </div>
+                        </form>
+                        <p class="ft-search-desc">Bấm vào ô kết quả bên dưới để tìm sản phẩm tương đương</p>
+                        </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="home-about-sec">
+        <div class="container">
+            <div class="home-about-img">
+                <img width="610" src="../img/84-959x610.jpg" alt="">
+            </div>
+            <div class="home-about-content ">
+                <div class="content">
+                    <p class="main-sub-title wow hl-color" data-wow-delay="0.2">GIỚI THIỆU</p>
+                <h3 class="main-title wow" data-wow-delay="0.4s">
+                    CÔNG TY TNHH <br> CHỈ PHẪU THUẬT <strong class="hl-color">CPT</strong>
+                </h3>
+                <div class="mona-content wow " data-wow-delay="0.6s">
+                    <p>Hoạt động từ năm 1992, CPT là nhà sản xuất thiết bị
+                        y tế kỹ thuật cao chuyên dùng cho phẫu thuật ngoại khoa
+                        .Sản phẩm chủ lực gồm có chỉ khẩu phẫu thuật và vật tư y 
+                        tế tiêu hao điều trị vết thương.
+                    </p>
+                    <p>
+                        Sứ mệnh của chúng tôi là mang đến giải pháp an toàn và hiệu quả cho quá trình phẫu thuật chữa lành mọi thương tổn, phục hồi chức năng, tạo hình thẩm mỹ để mang đến sức khỏe và chất lượng cuộc sống tốt đẹp hơn.
+                    </p>
+                    <p>Bằng đội ngũ nhân sự tận tâm yêu nghề, nguyên vật liệu cao cấp và công nghệ hiện đại của Đức; chúng tôi cung cấp sản phẩm đạt tiêu chuẩn quốc tế (US-FDA) với nhiều tính năng kỹ thuật vượt trội thỏa mãn kỳ vọng khách hàng và yêu cầu luật định.</p>
+                    <p>
+                        <strong class="hl-color">
+                            HỆ THỐNG QUẢN LÝ CHẤT LƯỢNG:
+                        </strong>
+                        ISO 13485 | FDA 21 CFR Part 820 (QSR).
+                    </p>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="produce-sec sec">
+        <div class="container">
+            <h3 class="main-title main-title-border">
+                SẢN PHẨM
+            </h3>
+            <div class="mona-content fz-16">
+                <ul class="mona-nav-3 column-count-2">
+                    <li>
+                        <strong>
+                            CPT có 
+                            <span class="hl-color-3">1000+</span>
+                        Mã hàng đáp ứng hầu hết các loại hình phẫu thuật: ngoại tổng quát, tiêu hóa, sản phụ khoa, chấn thương chỉnh hình, tim mạch lồng ngực, nhãn khoa, thẩm mỹ…
+                        </strong>
+                    </li>
+                    <li>
+                        <strong>
+                            Sản phẩm được tin dùng bởi các chuyên gia phẫu thuật đầu ngành, mang đến chất lượng và trải nghiệm sử dụng tương đương với các nhãn hàng uy tín trên thế giới như 
+                            <span class="hl-color">Ethicon (Johnson & Johnson), B.Braun, Covidien (Medtronic).</span>  
+                        </strong>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <div class="products-tab-sec sec">
+        <div class="container">
+            <ul class="tab-links">
+                <li class="tab-link active" data-tab-id="tab-0"> CHỈ PHẪU THUẬT TỰ TIÊU</li>
+                <li class="tab-link " data-tab-id="tab-1">CHỈ PHẪU THUẬT KHÔNG TIÊU</li>
+                <li class="tab-link " data-tab-id="tab-2">VẬT TƯ Y TẾ</li>
+            </ul>
+        </div>
+        <div class="tab-contents">
+            <div class="tab-content active" id="tab-0">
+                <div class="home-pd-cate-wrap">
+                    <div class="container">
+                        <div class="columns">
+                            <div class="column home-pd-cate-img">
+                                <img width="409" height="345" src="../img/last-409x345-300x253.png" alt="">
+                            </div>
+                            <div class="column home-pd-cate-content">
+                                <div class="columns">
+                                    <div class="column">
+                                        <div class="home-pd-cate-item">
+                                            <p class="home-pd-cate-title">
+                                                CHỈ TỰ TIÊU
+                                            </p>
+                                            <ul class="home-pd-cate-nav">
+                                                <li class="item" style="border-left-color: #ad1174;">
+                                                    <a href="#">
+                                                        <span class="title">CARESORB PLUS®</span>
+                                                        <span class="desc">
+                                                            POLYGLACTIN 910 ANTIBACTERIAL - Chỉ phẫu thuật kháng khuẩn
+                                                        </span>
+                                                    </a>
+                                                    <span class="overlay-bar" style="background-image: url('../img/CARESORB-PLUS-POLYGLACTIN-910-ANTIBACTERIAL-1.jpg');"></span>
+                                                </li>
+                                                <li class="item" style="border-left-color: #7d287e;">
+                                                    <a href="#">
+                                                        <span class="title">
+                                                            CARESORB®
+                                                        </span>
+                                                        <span class="desc">
+                                                            POLYGLACTIN 910 (chỉ Vicryl)
+                                                        </span>
+                                                    </a>
+                                                    <span class="overlay-bar" style="background-image: url('../img/caresorb-polyglactin-910-chi-phau-thuat-cpt-sutures-1.jpg');"></span>
+                                                </li>
+                                                <li class="item" style="border-left-color: #ff0000;">
+                                                    <a href="#">
+                                                        <span class="title">
+                                                            CARESORB RAPID®
+                                                        </span>
+                                                        <span class="desc">POLGLACTIN 910 (R)</span> 
+                                                    </a>
+                                                    <span class="overlay-bar" style="background-image: url('../img/CARESORB-RAPID-CPT-SUTURES-1.jpg');"></span>
+                                                </li>
+                                                <li class="item" style="border-left-color: #a114de;">
+                                                    <a href="#">
+                                                        <span class="title">
+                                                            CARESYN®
+                                                        </span>
+                                                        <span class="desc">POLYGLYCOLIC ACID</span> 
+                                                    </a>
+                                                    <span class="overlay-bar" style="background-image: url('../img/CARESYN-POLYGLYCOLIC-ACID-CPT-SUTURES-1.jpg');"></span>
+                                                </li>
+                                                <li class="item" style="border-left-color: #ff0000;">
+                                                    <a href="#">
+                                                        <span class="title">
+                                                            CARESYN RAPID®
+                                                        </span>
+                                                        <span class="desc">POLYGLYCOLIC ACID (R)</span> 
+                                                    </a>
+                                                    <span class="overlay-bar" style="background-image: url('../img/CARESYN-RAPID-CPT-SUTURES-1.jpg');"></span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="column">
+                                        <div class="home-pd-cate-item">
+                                            <p class="home-pd-cate-title"></p>
+                                            <ul class="home-pd-cate-nav">
+                                                <li style="border-left-color: #b5b5b5;">
+                                                    <a href="#">
+                                                        <span class="title">
+                                                            PROTISORB®
+                                                        </span>
+                                                        <span class="desc">POLYDIOXANONE (Chỉ PDS)</span> 
+                                                    </a>
+                                                    <span class="overlay-bar" style="background-image: url('../img/PROTISORB-POLYDIOXANONE-1.jpg');"></span>
+                                                </li>
+                                                <li style="border-left-color: #f69780;">
+                                                    <a href="#">
+                                                        <span class="title">
+                                                            TRUSTISORB®
+                                                        </span>
+                                                        <span class="desc">POLYGLECAPRONE 25</span> 
+                                                    </a>
+                                                    <span class="overlay-bar" style="background-image: url('../img/TRUSTISORB-POLYGLECAPRONE-CPT-SUTURES-2.jpg');"></span>
+                                                </li>
+                                                <li style="border-left-color: #febe10;">
+                                                    <a href="#">
+                                                        <span class="title">
+                                                            TRUSTIGUT® (N)
+                                                        </span>
+                                                        <span class="desc">PLAIN CATGUT</span> 
+                                                    </a>
+                                                    <span class="overlay-bar" style="background-image: url('../img/TRUSTIGUT-PLAIN-CATGUT-CPT-SUTURES-1.jpg');"></span>
+                                                </li>
+                                                <li style="border-left-color: #772f00;">
+                                                    <a href="#">
+                                                        <span class="title">
+                                                            TRUSTIGUT® (C)
+                                                        </span>
+                                                        <span class="desc">CHROMIC CATGUT</span> 
+                                                    </a>
+                                                    <span class="overlay-bar" style="background-image: url('../img/TRUSTIGUT-CHROM-CATGUT-CPT-SUTURES-1.jpg');"></span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content " id="tab-1">
+                <div class="home-pd-cate-wrap">
+                    <div class="container">
+                        <div class="columns">
+                            <div class="column home-pd-cate-img"></div>
+                            <div class="home-pd-cate-content">
+                                <div class="columns">
+                                    <div class="column" style="width: 270px;">
+                                        <div class="home-pd-cate-item">
+                                            <p class="home-pd-cate-title">CHỈ KHÔNG TIÊU</p>
+                                            <ul class="home-pd-cate-nav">
+                                                <li style="border-left-color: #69ac45;">
+                                                    <a href="#">
+                                                        <span class="title">
+                                                            CARELON®
+                                                        </span>
+                                                        <span class="desc">NYLON-POLYAMIDE     </span> 
+                                                    </a>
+                                                    <span class="overlay-bar" style="background-image: url('../img/CARELON-NYLON-CPT-SUTURES-1.jpg');"></span>
+                                                </li>
+                                                <li style="border-left-color: #1e73be;">
+                                                    <a href="#">
+                                                        <span class="title">
+                                                            CARESILK®
+                                                        </span>
+                                                        <span class="desc">SILK | SOIE </span> 
+                                                    </a>
+                                                    <span class="overlay-bar" style="background-image: url('../img/CARESILK-CPT-SUTURES-1-1.jpg');"></span>
+                                                </li>
+                                                <li style="border-left-color: #f47920;">
+                                                    <a href="#">
+                                                        <span class="title">
+                                                            PROTIBOND®
+                                                        </span>
+                                                        <span class="desc">POLYESTER</span> 
+                                                    </a>
+                                                    <span class="overlay-bar" style="background-image: url('../img/PROTIBOND-POLYESTER-CPT-SUTURES-2.jpg');"></span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="column">
+                                        <div class="home-pd-cate-item">
+                                            <p class="home-pd-cate-title"></p>
+                                            <ul class="home-pd-cate-nav">
+                                              <li style="border-left-color: #1e73be;">
+                                                <a href="#">
+                                                    <span class="title">
+                                                        TRUSTILENE®
+                                                    </span>
+                                                    <span class="desc">POLYPROPYLENE | Chỉ Prolene</span> 
+                                                </a>
+                                                <span class="overlay-bar" style="background-image: url('../img/TRUSTILENE-POLYPROPYLENE-CPT-SUTURES-2.jpg');"></span>
+                                              </li>
+                                              <li style="border-left-color: #800000;">
+                                                <a href="#">
+                                                    <span class="title">
+                                                        CARESTEEL®
+                                                    </span>
+                                                    <span class="desc">SURGICAL STEEL</span> 
+                                                </a>
+                                                <span class="overlay-bar" style="background-image: url('../img/CARESTEEL-SURGICAL-CPT-SUTURES-1.jpg');"></span>
+                                              </li>  
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content " id="tab-2">
+                <div class="home-pd-cate-wrap">
+                    <div class="container">
+                        <div class="columns">
+                            <div class="column home-pd-cate-img">
+                                <img width="409" height="345" src="../img/last-409x345-300x253.png" alt="">
+                            </div>
+                            <div class="column home-pd-cate-content">
+                                <div class="columns">
+                                    <div class="column" style="width: 300px;">
+                                        <div class="home-pd-cate-item">
+                                            <p class="home-pd-cate-title">VẬT TƯ Y TẾ</p>
+                                            <ul class="home-pd-cate-nav">
+                                                <li style="border-left-color: #dd3333;">
+                                                    <a href="#">
+                                                        <span class="title">
+                                                             
+                                                        </span>
+                                                        <span class="desc">VẬT LIỆU CẦM MÁU <br> CARECEL®</span> 
+                                                    </a>
+                                                    <span class="overlay-bar" style="background-image: url('../img/CARECEL-ABSORBABLE-HEMOSTAT-CPT-SUTURES-3-1.jpg');"></span>
+                                                </li>
+                                                <li style="border-left-color: #653614;">
+                                                    <a href="#">
+                                                        <span class="title">
+                                                             
+                                                        </span>
+                                                        <span class="desc">KIM PHẪU THUẬT <br> XTRACOAT®</span> 
+                                                    </a>
+                                                    <span class="overlay-bar" style="background-image: url('../img/CARECEL-ABSORBABLE-HEMOSTAT-CPT-SUTURES-3-1.jpg');"></span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="column" style="width: 300px;">
+                                        <div class="home-pd-cate-item">
+                                            <p class="home-pd-cate-title"></p>
+                                            <ul class="home-pd-cate-nav">
+                                                <li style="border-left-color: #1e73be;">
+                                                    <a href="#">
+                                                        <span class="title">
+                                                             
+                                                        </span>
+                                                        <span class="desc">LƯỚI THOÁT VỊ <br> TRUStILENE® MESH</span> 
+                                                    </a>
+                                                    <span class="overlay-bar" style="background-image: url('../img/Luoi-thoat-vi-1.jpg');"></span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="produce-sec sec">
+        <div class="container">
+            <h3 class="main-title main-title-border">
+                NĂNG LỰC
+            </h3>
+            <div class="mona-content fz-16">
+                <ul class="mona-nav-3 column-count-2">
+                    <li>Với kinh nghiệm dày dặn, quy mô sản xuất lớn và vị trí giao thương thuận tiện; CPT có lợi thế cung cấp đầy đủ các loại chỉ phẫu thuật và vật tư y tế tiêu hao một cách nhanh chóng với chất lượng đảm bảo và giá cả cạnh tranh nhất trên thị trường.</li>
+                    <li>
+                        Đội ngũ nghiên cứu và phát triển (R&D) luôn cập nhật công nghệ mới và tiếp thu ý kiến từ các nhà chuyên môn trong ngành y tế để cải tiến liên tục chất lượng sản phẩm, thiết lập những chuẩn mực và tính năng kỹ thuật mới.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="oem-sec sec">
+        <div class="oem-sec-top" style="background-image: url(../img/83.jpg);">
+            <div class="container">
+                <h3 class="main-title wow">OEM</h3>
+                <div class="text-wrap wow">
+                    Với hệ thống phòng sạch và quy trình sản xuất theo chuẩn quốc tế, Công ty <br>
+                     TNHH Chỉ phẫu Thuật CPT cung cấp thành phẩm mang nhãn hiệu riêng cho các hãng <br>
+                     thiết bị y tế uy tín trên thế giới. Các dịch vụ gia công:
+                </div>
+            </div>
+        </div>
+        <div class="oem-sec-bottom">
+            <div class="container">
+                <div class="columns">
+                    <div class="column ">
+                        <p class="oem-title fadeInLeft">
+                            <img src="https://cpt-medical.com/template/images/tick.svg" alt="" class="lazyloaded">
+                            GẮN KIM VÀO CHỈ PHẪU THUẬT (VI PHẪU, KHÂU MẠCH MÁU, NHÃN KHOA ĐẾN USP 11/0)
+                        </p>
+                    </div>
+                    <div class="column ">
+                        <div class="oem-title fadeInRight">
+                            <img src="https://cpt-medical.com/template/images/tick.svg" alt="" class="lazyloaded">
+                            ĐÓNG GÓI VÀ TIỆT TRÙNG DỤNG CỤ, VẬT TƯ Y TẾ BẰNG KHÍ EO (ETHYLENE OXIDE) 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="superior-quality-sec sec">
+      <div class="container">
+        <h3 class="main-title wow">TÍNH NĂNG VƯỢT TRỘI</h3>
+        <div class="superior-quality-wrap">
+            <div class="columns">
+                <div class="column wow" data-wow-delay="0.2s">
+                    <div class="superior-quality-item">
+                        <h4 class="superior-quality-title">KIM THÉP 302 PHỦ SILICON XTRACOAT®</h4>
+                        <div class="superior-quality-info">
+                            <div class="mona-content">
+                                <p>
+                                    Kim khâu được làm từ hợp kim thép Series 300 chắc khỏe, có khả năng đàn hồi chống cong gãy, thân kim chống xoay khi kẹp kim giúp phẫu thuật viên thao tác dễ dàng.
+                                </p>
+                                <br>
+                                <p>
+                                    Bề mặt kim được phủ silicon XtraCoat® đa lớp giúp trượt qua mô êm ái, bảo toàn lực đâm xuyên liên tục suốt quá trình khâu vết thương. Mũi kim UltraGlyde® sắc bén, tỉ lệ vuốt nhọn tối ưu giúp thao tác chính xác, đường khâu thẩm mỹ.
+                                </p>
+                            </div>
+                        </div>
+                        <a href="#" class="main-btn">XEM THÊM
+                            <i class="fa-solid fa-angle-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="column wow" data-wow-delay="0.4">
+                    <div class="superior-quality-item">
+                        <h4 class="superior-quality-title">
+                            LỰC CĂNG CHỈ VƯỢT TIÊU CHUẨN MỸ (USP)
+                        </h4>
+                        <div class="superior-quality-info">
+                            <div class="mona-content">
+                                <p>Nguyên liệu chỉ nhập khẩu từ nguồn uy tín có độ tương thích sinh học cao theo tiêu chuẩn ISO 10993 (không chứa độc tính, không gây sốt, không gây kích ứng khi cấy ghép lâu dài).</p>
+                                <br>
+                                <p>Sức căng trung bình của chỉ đạt hơn 145% so với yêu cầu Dược Điển Mỹ (USP) đảm bảo nút buộc và mối khâu chắc chắn.</p>
+                                
+                            </div>
+                        </div>
+                        
+                        <a href="#" class="main-btn">XEM THÊM
+                            <i class="fa-solid fa-angle-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="column wow" data-wow-delay="0.6">
+                    <div class="superior-quality-item">
+                        <h4 class="superior-quality-title">
+                            GIẤY ĐÓNG GÓI TYVEK® BẢO VỆ TỐI ƯU
+                        </h4>
+                        <div class="superior-quality-info">
+                            <div class="mona-content">
+                                <p>Được làm từ 100% sợi polyethylene mật độ cao (HDPE) tạo thành rào cản vi sinh vật tuyệt đối trong môi trường nhiễm khuẩn. Giấy Tyvek® có bề mặt trắng mịn, không bám bụi, không thấm nước, chống thủng.
+
+                                </p>
+                                    <br>
+                                <p>
+                                    <strong>
+                                        “BỀN DAI, KHÔNG RÁCH NHƯ CÁC LOẠI GIẤY Y TẾ TIỆT TRÙNG THÔNG THƯỜNG”
+                                    </strong>
+                                </p>
+                            </div>
+                        </div>
+                        <a href="#" class="main-btn">
+                            XEM THÊM
+                            <i class="fa-solid fa-angle-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>  
+    </section>
+    </main>
+    <!-- *END MAIN -->
+    <footer>
+        <section class="top-footer">
+            <div class="container">
+                <h4 class="main-title-2 fadeInLeft">
+                    SẢN PHẨM ĐẠT TIÊU CHUẨN FDA <br>
+                <strong>
+                    ĐƯỢC TIN DÙNG BỞI CÁC NHÀ NGOẠI KHOA ĐẦU NGÀNH
+                </strong>
+                </h4>
+                <div class="top-footer-cate">
+                    <a href="" class="main-btn bg-2 fadeInRight">
+                        DANH MỤC SẢN PHẨM
+                        <i class="fa-solid fa-angle-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <div class="bottom-footer">
+            <div class="container">
+                <div class="columns">
+                    <div class="column ft-column-1">
+                        <div class="ft-logo">
+                            <img width="165" height="60" src="../img/Logo-CPTw.png" alt="">
+                        </div>
+                        <div class="ft-logo">
+                            <img src="../img/ft-logo-2.png" alt="">
+                        </div>
+                    </div>
+                    <div class="column ft-column-2">
+                        <ul class="ft-nav">
+                            <li>
+                                <a href="#">ENGLISH</a>
                             </li>
                             <li>
-                                <a href="">
-                                    TIN TỨC
-                                </a>
+                                <a href="index.html">TRANG CHỦ</a>
+                            </li>
+                            <li>
+                                <a href="#">CHỈ PHẪU THUẬT</a>
+                            </li>
+                            <li>
+                                <a href="">VẬT TƯ Y TẾ</a>
                             </li>
                             <li>
                                 <a href="">LIÊN HỆ</a>
                             </li>
                         </ul>
                     </div>
+                    <div class="column ft-column-3">
+                        <div class="ft-search">
+                            <p class="ft-search-title">Tìm Kiếm Sản Phẩm</p>
+                        <form action="" class="ft-search-input">
+                            <input class="f-control" type="search" name="" id="" placeholder="SEARCH YOUR PRODUCT">
+                            <button type="submit" class="main-btn mona-has-ajax">
+                                <img src="https://cpt-medical.com/template/images/search-btn.svg" alt="">
+                            </button>
+                        </form>
+                        <p>Bấm vào ô kết quả bên dưới để tìm sản phẩm tương đương</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </header>
-    <main class="main" id="main">
-    <div class="home-banner-slider-wrap" data-="">
-        <div class="home-banner-sec">
-            <img src="../img/CARESILK-CPT-SUTURES.jpg" alt="">
-        </div>
-        <div class="home-banner-sec">
-            <img src="../img/CARESILK-CPT-SUTURES.jpg" alt="">
-        </div>
-    </div>
-    </main>
+    </footer>
+    <!-- Cuộn Lên Đầu Trang -->
+    
+   
+
 </body>
 <script src="https://kit.fontawesome.com/85779941e8.js" crossorigin="anonymous"></script>
-<script>
-    window.onscroll = function() {myFunction()};
+<!-- *Sự kiện cuộn trang -->
+  
+<script> 
+    /*window.onscroll = function() {myFunction()};
 
-var header = document.getElementById("header");
+var header = document.getElementById("bottom-header");
 
-var sticky = header.offsetTop;
-
+var sticky = header.offsetTop + 60;
 function myFunction() {
   if (window.pageYOffset > sticky) {
     header.classList.add("fixed");
-  } else {
+  }
+   else{
     header.classList.remove("fixed");
   }
-}
+}*/
+
+if (document.getElementById('header')) {
+    window.addEventListener('load', () => {
+      const header = document.getElementById('header');
+      const main = document.getElementById('main');
+      const headerOffset = header.offsetTop;
+      const headerHeight = header.offsetHeight;
+      if (pageYOffset >= headerOffset + headerHeight) {
+        header.classList.add('fixed');
+        main.style.marginTop = headerHeight + 'px';
+      } else {
+        header.classList.remove('fixed');
+        main.style.marginTop = '';
+      }
+      window.addEventListener('scroll', function () {
+        if (pageYOffset >= headerOffset + headerHeight) {
+          header.classList.add('fixed');
+          main.style.marginTop = headerHeight + 'px';
+        } else {
+          header.classList.remove('fixed');
+          main.style.marginTop = '';
+        }
+      });
+    });
+  }
+
+<!-- *Click lên đầu trang -->
+var backButton = document.getElementById('scroll-top'); // Thay 'backToTopButton' bằng ID thật của nút quay về đầu trang
+
+// Lắng nghe sự kiện cuộn
+window.addEventListener('scroll', function() {
+  // Kiểm tra vị trí cuộn
+  if (window.scrollY === 0) {
+    backButton.classList.remove('show'); // Ẩn nút khi ở đầu trang
+  } else {
+    backButton.classList.add('show'); // Hiển thị nút khi không ở đầu trang
+  }
+});
+
+// Lắng nghe sự kiện click trên nút quay về đầu trang
+backButton.addEventListener('click', function() {
+  // Cuộn lên đầu trang
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth' // Tạo hiệu ứng cuộn mượt
+  });
+});
+    <!-- *Lắng nghe sự kiện click vào menu hamburger-->
+
+   const menuBtn = document.querySelector('.hamburger-btn');
+   const mainMenu = document.querySelector('.main-menu');
+   let menuOpen = false;
+   menuBtn.addEventListener('click', () =>{
+    if(!menuOpen){
+        menuBtn.classList.add('active');
+        mainMenu.classList.add('active');
+        menuOpen = true;
+    }
+    else{
+        menuBtn.classList.remove('active');
+        mainMenu.classList.remove('active');
+        menuOpen = false;
+        
+    }
+   });
+  
+
+   <!-- !Sự Kiện click icon -->
+   const iconElements = document.querySelectorAll('.main-menu-nav .dropdown .fa-solid')
+   iconElements.forEach(function(icon){
+    icon.addEventListener('click', function(event) {
+        event.preventDefault(); // Ngăn chuyển hướng mặc định
+        // Xử lý sự kiện khi nhấn vào thẻ <i>
+            this.classList.toggle('clicked');
+      });
+   });
+
+//Click ICON hiện
+   function toggleSubMenu(event) {
+    var clickedIcon = event.target;
+    var subMenuWrap = clickedIcon.closest('.dropdown').querySelector('.sub-menu-wrap');
+    subMenuWrap.classList.toggle('hidden');
+  }
 </script>
+
+<script>
+    var slideIndex = 0;
+var slidess = document.getElementsByClassName('home-banner-sec');
+
+function showSlide(index) {
+  for (var i = 0; i < slidess.length; i++) {
+    slidess[i].classList.remove('show-anim');
+  }
+  slidess[index].classList.add('show-anim');
+}
+
+function autoSlide() {
+  slideIndex++;
+  if (slideIndex >= slidess.length) {
+    slideIndex = 0;
+  }
+  showSlide(slideIndex);
+}
+
+// Kích hoạt chuyển đổi slide tự động
+setInterval(autoSlide, 5000);
+</script>
+
+    <!-- *Animation khi cuộn trang -->
+    <script>
+        function isElementPartiallyInViewport(el) {
+            var rect = el.getBoundingClientRect();
+            var windowHeight = window.innerHeight || document.documentElement.clientHeight;
+            return (
+                rect.top < windowHeight &&
+                rect.bottom >= 0
+            );
+        }
+
+        function handleScroll() {
+            var delay = 0;
+            var animatedSuper = document.querySelectorAll('.superior-quality-sec .wow');
+            var animatedOEMTop = document.querySelectorAll('.wow')
+            var animatedAbout = document.querySelectorAll('.content .wow')
+            var animatedOEMTitleR = document.querySelectorAll('.fadeInRight')
+            var animatedOEMTitle = document.querySelectorAll('.fadeInLeft')
+            var animatedProductTab = document.querySelectorAll(".products-tab-sec")
+            var animatedProduceContent = document.querySelectorAll('.produce-sec .mona-nav-3');
+            var animatedProduce = document.querySelectorAll('.produce-sec .main-title');
+            var animatedSearchLeft = document.querySelectorAll('.home-search-info');
+        var animatedSearchRight = document.querySelectorAll('.home-search-sec-right .home-search-form');
+            var animatedElements = document.querySelectorAll('.reasons-wrap .columns');
+            for (var i = 0; i < animatedElements.length; i++) {
+                if (isElementPartiallyInViewport(animatedElements[i])) {
+                    animatedElements[i].classList.add('fadeInRightShorter');
+                }
+            }
+            for (var i = 0; i < animatedSearchLeft.length; i++) {
+                if (isElementPartiallyInViewport(animatedSearchLeft[i])) {
+                    animatedSearchLeft[i].classList.add('fadeInLeftShorter');
+                }
+            }
+            for (var i = 0; i < animatedSearchRight.length; i++) {
+                if (isElementPartiallyInViewport(animatedSearchRight[i])) {
+                    animatedSearchRight[i].classList.add('fadeInRightShorter2');
+                }
+            }
+            for (var i = 0; i < animatedAbout.length; i++) {
+                if (isElementPartiallyInViewport(animatedAbout[i])) {
+                    animatedAbout[i].style.animationDelay = delay + 's';
+                    animatedAbout[i].classList.add('fadeInUpShorter');
+                    delay += 0.2;
+                }
+            }
+            for (var i = 0; i < animatedProduce.length; i++) {
+                if (isElementPartiallyInViewport(animatedProduce[i])) {
+                    animatedProduce[i].classList.add('fadeInLeftShorter');
+                }
+            }
+            for (var i = 0; i < animatedProduceContent.length; i++) {
+                if (isElementPartiallyInViewport(animatedProduceContent[i])) {
+                    animatedProduceContent[i].classList.add('animation');
+                }
+            }
+            for (var i = 0; i < animatedProductTab.length; i++) {
+                if (isElementPartiallyInViewport(animatedProductTab[i])) {
+                    animatedProductTab[i].classList.add('fadeInUpShorter');
+                }
+            }
+            for (var i = 0; i < animatedOEMTitle.length; i++) {
+                if (isElementPartiallyInViewport(animatedOEMTitle[i])) {
+                    animatedOEMTitle[i].classList.add('fadeInLeftShorter');
+                }
+            }
+            for (var i = 0; i < animatedOEMTitleR.length; i++) {
+                if (isElementPartiallyInViewport(animatedOEMTitleR[i])) {
+                    animatedOEMTitleR[i].classList.add('fadeInRightShorter2');
+                }
+            }
+            for (var i = 0; i < animatedOEMTop.length; i++) {
+                if (isElementPartiallyInViewport(animatedOEMTop[i])) {
+                    animatedOEMTop[i].style.animationDelay = delay + 's';
+                    animatedOEMTop[i].classList.add('fadeInLeftShorter');
+                    delay += 0.2;
+                }
+            }
+            for (var i = 0; i < animatedSuper.length; i++) {
+                if (isElementPartiallyInViewport(animatedSuper[i])) {
+                    delay += 0.16;
+                    animatedSuper[i].style.animationDelay = delay + 's';
+                    animatedSuper[i].classList.add('fadeInUpShorter');
+                    
+                }
+            }
+        }
+
+        // Thêm sự kiện cuộn chuột
+        window.addEventListener('scroll', handleScroll);
+        window.addEventListener('resize', handleScroll);
+
+        // Kiểm tra các phần tử hiển thị khi trang được tải lần đầu
+        handleScroll();
+    </script>
+
+<script src="../app.js"></script>
+<script>
+   // Lắng nghe sự kiện click trên các thẻ li
+var tabLinks = document.getElementsByClassName('tab-link');
+for (var i = 0; i < tabLinks.length; i++) {
+  tabLinks[i].addEventListener('click', function() {
+    // Loại bỏ lớp hoạt động (active) từ tất cả các thẻ li
+    for (var j = 0; j < tabLinks.length; j++) {
+      tabLinks[j].classList.remove('active');
+    }
+
+    // Thêm lớp hoạt động (active) vào thẻ li được click
+    this.classList.add('active');
+
+    // Lấy id của thẻ li được click
+    var tabId = this.getAttribute('data-tab-id');
+
+    // Hiển thị nội dung tab tương ứng
+    var tabContents = document.getElementsByClassName('tab-content');
+    for (var k = 0; k < tabContents.length; k++) {
+      tabContents[k].classList.remove('active');
+    }
+    document.getElementById(tabId).classList.add('active');
+  });
+}
+
+</script>
+
 </html>
